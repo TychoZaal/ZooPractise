@@ -193,9 +193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5242724db835f940bb063c316dc5ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBalloon: {fileID: 1088522889311824}
-  textObject: {fileID: 114859519199696330}
-  name: 
+  animalName: RAWRXD
+  Balloon: {fileID: 1088522889311824}
+  text: {fileID: 114859519199696330}
 --- !u!1 &1842172867500350
 GameObject:
   m_ObjectHideFlags: 0

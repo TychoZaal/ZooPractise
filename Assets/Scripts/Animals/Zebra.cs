@@ -1,19 +1,17 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace Zoo
+﻿namespace Zoo
 {
-    class Zebra : Animal, IAnimal
+    class Zebra : Animal, IHerbivore // Zebra's eat leaves and cannot perform tricks
     {
-        public void Eat()
+        public override void SayHello()
         {
-            throw new NotImplementedException();
+            Balloon.SetActive(true);
+            text.text = "zebra zebra";
         }
 
-        public void SayHello()
+        public void EatLeaves()
         {
-            throw new NotImplementedException();
+            Balloon.SetActive(true);
+            text.text = "munch munch zank yee bra";
         }
     }
 }

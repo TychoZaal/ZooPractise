@@ -1,32 +1,17 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-
-namespace Zoo
+﻿namespace Zoo
 {
-    class Hippo : Animal, IAnimal
+    class Hippo : Animal, IHerbivore // Hippo's eat leaves and cannot perform tricks
     {
-        public string name;
-        /*
-        public void SayHello()
+        public override void SayHello()
         {
-            textBalloon.SetActive(true);
-            textObject.text = "splash";
+            Balloon.SetActive(true);
+            text.text = "splash";
         }
 
         public void EatLeaves()
         {
-            textBalloon.SetActive(true);
-            textObject.text = "munch munch lovely";
-        }*/
-
-        public void Eat()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void SayHello()
-        {
-            throw new System.NotImplementedException();
+            Balloon.SetActive(true);
+            text.text = "munch munch lovely";
         }
     }
     

@@ -101,8 +101,6 @@ GameObject:
   - component: {fileID: 114044554270781382}
   - component: {fileID: 114038196750448500}
   - component: {fileID: 114782059285527604}
-  - component: {fileID: 7072728385352703508}
-  - component: {fileID: -343014500993333526}
   m_Layer: 5
   m_Name: Zebra
   m_TagString: Untagged
@@ -195,33 +193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60302699e44f2ac4e9f9fd64eb4c65bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7072728385352703508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072593225874480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15122614e2df4143847bdbec9abb4f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textBalloon: {fileID: 1043684593461274}
-  textObject: {fileID: 114601203191200772}
-  message: Hello yes yes I Zebra
---- !u!114 &-343014500993333526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072593225874480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4945dfb679a44db929abdb9e78ac5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  animalName: Horse
+  Balloon: {fileID: 1043684593461274}
+  text: {fileID: 114601203191200772}
 --- !u!1 &1247384754963540
 GameObject:
   m_ObjectHideFlags: 0

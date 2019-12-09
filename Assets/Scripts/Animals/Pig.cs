@@ -1,53 +1,35 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Zoo
 {
-    class Pig : MonoBehaviour, IAnimal
+    class Pig : Animal, IHerbivore, ICarnivore, IPerformTrick // Pigs eat meat, leaves and can also perform tricks
     {
-        public string name;
-
-        /*public void SayHello()
+        public override void SayHello()
         {
-            textBalloon.SetActive(true);
-            textObject.text = "oink oink";
+            Balloon.SetActive(true);
+            text.text = "oink oink";
         }
 
         public void EatLeaves()
         {
-            textBalloon.SetActive(true);
-            textObject.text = "munch munch oink";
+            Balloon.SetActive(true);
+            text.text = "munch munch oink";
         }
 
         public void EatMeat()
         {
-            textBalloon.SetActive(true);
-            textObject.text = "nomnomnom oink thx";
+            Balloon.SetActive(true);
+            text.text = "nomnomnom oink thx";
         }
 
-        public void PerformTrick()
-        {
-            StartCoroutine(DoTrick());
-        }
-
-        IEnumerator DoTrick()
+        public IEnumerator PerformTrick()
         {
             for (int i = 0; i < 360; i++)
             {
                 transform.localRotation = Quaternion.Euler(i, 0, 0);
                 yield return new WaitForEndOfFrame();
             }
-        }*/
-
-        public void Eat()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void SayHello()
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

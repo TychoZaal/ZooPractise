@@ -1,33 +1,17 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace Zoo
+﻿namespace Zoo
 {
-    internal class Lion : Animal, IAnimal
+    class Lion : Animal, ICarnivore // Lions eat meat and can not do tricks
     {
-        public string name;
-
-        /*public void SayHello()
+        public override void SayHello()
         {
-            textBalloon.SetActive(true);
-            textObject.text = "roooaoaaaaar";
+            Balloon.SetActive(true);
+            text.text = "roooaoaaaaar";
         }
 
         public void EatMeat()
         {
-            textBalloon.SetActive(true);
-            textObject.text = "nomnomnom thx mate";
-        }*/
-
-        public void Eat()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SayHello()
-        {
-            throw new NotImplementedException();
+            Balloon.SetActive(true);
+            text.text = "nomnomnom thx mate";
         }
     }
 }
